@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #FAFAFA;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 56px;
+  color: #FFF;
+  background: #607D8B;
+  font-size: 20px;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),
+      0 2px 9px 1px rgba(0,0,0,.12),
+      0 4px 2px -2px rgba(0,0,0,.2);
+  padding: 16px 16px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.header__title {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+
+.main {
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 16px;
+  position: relative;
+  z-index: 0;
+}
+
+.login,.search {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+}
+
+.login__title, .search__title {
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.login__form {
+  padding: 12px;
+}
+
+.login__form input, .login__form button, .search__form input, .search__form button {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: none;
+  border-bottom-style: solid;
+  padding: 16px;
+  margin: 16px;
+  outline: 0;
+}
+
+.login__form input:focus, .search__form:focus {
+  border-bottom-color: #607D8B;
+}
+
+.login__form button, .search__form button {
+  background-color: #607D8B;
+  color: #FFF;
+  font-size: 0.95em;
+}
+
+.error-message {
+  font-size: 1em;
+  font-weight: normal;
+  color: #E53935;
+  text-align: center;
+  margin: auto;
+}
+
+.info-message {
+  font-size: 1em;
+  color: #000;
+  text-align: center;
+  margin: auto;
+  font-weight: normal;
+}
+
+.result-table {
+  background: #FFF;
+  margin: auto;
+  width: 480px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.result-table th {
+  font-weight: bold;
+  padding: 12px;
+  border-bottom: 2px solid #607D8B;;
+}
+
+.result-table tbody tr {
+  font-weight: normal;
+  padding: 12px;
+  border-top: 1px solid #607D8B;;
+}
+
+.result-table td {
+  padding: 12px;
+  text-align: left;
+}

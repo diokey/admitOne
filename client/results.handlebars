@@ -1,0 +1,25 @@
+<div class="search-result">
+  <h2 class="search__title">Search Result</h2>
+  <table class="result-table">
+    <thead>
+      <tr>
+        <th>Event ID</th>
+        <th>Customer</th>
+        <th>Ticket</th>
+      </tr>
+    </thead>
+    <tbody>
+    {{#each results}}
+      <tr>
+        <td>{{event.eventId}}</td>
+        <td>{{customer.email}}</td>
+        <td>{{tickets}}</td>
+      </tr>
+    {{else}}
+      <tr>
+        <td colspan="2">No data to display</td>
+      </tr>
+    {{/each}}
+    </table>
+  </table>
+</div><!--end log form -->

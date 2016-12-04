@@ -1,0 +1,18 @@
+<div class="search">
+  <h2 class="search__title">Search</h2>
+  <h4 class="info-message">
+    Search for events between ID
+  </h4>
+  <h4 class="error-message">
+    <ul>
+      {{#each errors}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  </h4>
+  <form action="/results" method="POST" class="search__form">
+    <input type="number" name="startEventId" title="Event Id Start" placeholder="Event ID Start" required/>
+    <input type="number" name="endEventId" title="Evnet Id End" placeholder="Event ID End" required/>
+    <button type="submit">Search</button>
+  </form>
+</div>
