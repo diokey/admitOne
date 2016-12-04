@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
+    "start": "export NODE_ENV=production && node server.js",
     "test": "npm run unit-test && npm run api-test",
     "unit-test": "export NODE_ENV=test && node_modules/mocha/bin/mocha --reporter spec --ui bdd api/**/*.model.spec.js",
     "api-test": "export NODE_ENV=test && node_modules/mocha/bin/mocha --reporter spec --ui bdd api/**/*.controller.spec.js",
